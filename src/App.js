@@ -37,7 +37,6 @@ function App() {
         <Step4 trainerData={trainerData}></Step4>
         <Step5 trainerData={trainerData}></Step5>
       </div>
-      )
     </div>
   );
 }
