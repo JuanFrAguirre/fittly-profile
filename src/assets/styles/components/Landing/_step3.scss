@@ -1,0 +1,45 @@
+.recomendations {
+  h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #404148;
+  }
+
+  h2 {
+    font-family: BrandonTextRegular;
+    font-size: 18px;
+    line-height: 27px;
+    color: #213638;
+  }
+  .boxRecomendations {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 25px 35px rgba(19, 29, 29, 0.05);
+    width: 100%;
+    padding: 50px !important;
+    margin: 30px 0 30px 0 !important;
+
+    .profileImg {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 80px;
+      border: 5px solid #d17f5c;
+    }
+
+    .profileName {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      padding-top: 10px !important;
+    }
+
+    .profileActivity {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #d17f5c;
+    }
+  }
+}
