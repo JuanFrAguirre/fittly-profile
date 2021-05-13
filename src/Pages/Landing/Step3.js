@@ -2,7 +2,8 @@ import { Col, Row, Container } from "react-bootstrap";
 
 import profile from "../../assets/img/profile.jpg";
 
-const Step3 = () => {
+const Step3 = ({ trainerData }) => {
+  console.log(trainerData);
   return (
     <Container className="mx-auto recomendations">
       <Row>
@@ -15,32 +16,32 @@ const Step3 = () => {
         <Col md={12}>
           <div className="boxRecomendations">
             <Row>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>
               </Col>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>
               </Col>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>
               </Col>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>
               </Col>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>
               </Col>
-              <Col md={2} className="text-center">
+              <Col className="text-center">
                 <img src={profile} className="profileImg" />
                 <h5 className="profileName">John Smith</h5>
                 <p className="profileActivity">Studio Onwer</p>

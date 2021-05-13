@@ -30,12 +30,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <Step1 trainerData={trainerData}></Step1>
-        <Step2 trainerData={trainerData}></Step2>
-        <Step3 trainerData={trainerData}></Step3>
-        <Step4 trainerData={trainerData}></Step4>
-        <Step5 trainerData={trainerData}></Step5>
+      <div className="container-fluid">
+        <div className="container mx-auto">
+          <Step1 trainerData={trainerData}></Step1>
+          <Step2 trainerData={trainerData}></Step2>
+          <Step3 trainerData={trainerData}></Step3>
+          <Step4 trainerData={trainerData}></Step4>
+          <Step5 trainerData={trainerData}></Step5>
+        </div>
       </div>
     </div>
   );
