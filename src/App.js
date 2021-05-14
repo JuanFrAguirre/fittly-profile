@@ -12,6 +12,8 @@ function App() {
   const [trainerData, setTrainerData] = useState({});
   const [loadingData, setLoadingData] = useState(true);
 
+  const urlId = window.location.pathname.slice(1);
+
   async function getTrainerData(id) {
     try {
       const { data } = await axios.get(`${URL.URL_BASE}/trainer/${id}`);
@@ -24,8 +26,8 @@ function App() {
 
   useEffect(() => {
     console.clear();
-    getTrainerData(1);
-  }, []);
+    getTrainerData(urlId);
+  }, [urlId]);
 
   return (
     <div className="App">
