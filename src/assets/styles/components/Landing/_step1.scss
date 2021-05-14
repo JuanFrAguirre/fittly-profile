@@ -16,9 +16,10 @@
     border-radius: 50px;
 
     img {
-      height: 100vh;
+      height: 90vh;
       width: 40vw;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: 0% 25%;
     }
   }
 
@@ -72,10 +73,10 @@
       border: none;
       outline: none;
       background-color: $fittly-orange;
-      transition: transform 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
 
       &:hover {
-        transform: scale(0.99);
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(#000, 0.2);
       }
     }
 
