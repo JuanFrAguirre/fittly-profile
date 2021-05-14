@@ -1,14 +1,17 @@
 import ProfilePicture from "../../assets/img/profile-picture-default.png";
 import LocationLogo from "../../assets/img/location_logo.svg";
 import FollowIcon from "../../assets/img/follow_icon.svg";
+import FollowingIcon from "../../assets/img/following_icon.svg";
 import MessageIcon from "../../assets/img/message_icon.svg";
 import DumbellIcon from "../../assets/img/dumbell_image.png";
+import { useState } from "react";
 
 const Step1 = ({ trainerData }) => {
   const getLocation = () => {
     return `${trainerData.address.city}, ${trainerData.address.country}`;
   };
   console.log(trainerData);
+  const [following, setFollowing] = useState(false);
 
   return (
     <div className="step1__container">
@@ -37,15 +40,34 @@ const Step1 = ({ trainerData }) => {
           </div>
           <div className="step1__social-and-skills">
             <div className="step1__social--container">
-              <div className="step1__social">
-                <button className="step1__social--follow">
-                  <img src={FollowIcon} alt="Follow Icon" />
-                  <p>Follow</p>
-                </button>
-                <button className="step1__social--message">
-                  <img src={MessageIcon} alt="Message Icon" />
-                </button>
-              </div>
+              {!following && (
+                <div className="step1__social">
+                  <button
+                    onClick={() => setFollowing(true)}
+                    className="step1__social--follow"
+                  >
+                    <img src={FollowIcon} alt="Follow Icon" />
+                    <p>Follow</p>
+                  </button>
+                  <button className="step1__social--message">
+                    <img src={MessageIcon} alt="Message Icon" />
+                  </button>
+                </div>
+              )}
+              {following && (
+                <div className="step1__social">
+                  <button
+                    onClick={() => setFollowing(false)}
+                    className="step1__social--message"
+                  >
+                    <img src={FollowingIcon} alt="Message Icon" />
+                  </button>
+                  <button className="step1__social--follow">
+                    <img src={MessageIcon} alt="Follow Icon" />
+                    <p>Message</p>
+                  </button>
+                </div>
+              )}
             </div>
             <div className="step1__skills__container">
               <div className="step1__skills">
