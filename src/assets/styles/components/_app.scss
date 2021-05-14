@@ -1,0 +1,27 @@
+.big-f-circle {
+  background-image: url(../../img/big_fat_circle.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+
+.loading {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba($fittly-orange, 0.9);
+  z-index: 9999;
+
+  h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+  }
+}
