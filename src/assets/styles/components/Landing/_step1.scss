@@ -146,10 +146,8 @@
 
   &--card {
     border-radius: 10px;
-    box-shadow: 0.2rem 0.2rem 0.1rem rgba($fittly-dark-teal, 0.2),
-      -0.2rem -0.2rem 0.1rem rgba($fittly-dark-teal, 0.2),
-      -0.2rem 0.2rem 0.1rem rgba($fittly-dark-teal, 0.2),
-      0.2rem -0.2rem 0.1rem rgba($fittly-dark-teal, 0.2);
+    box-shadow: 0.2rem 0.2rem 0.1rem rgba($fittly-dark-teal, 0.1),
+      -0.2rem -0.1rem 0.1rem rgba($fittly-dark-teal, 0.05);
     padding: 0.5rem 2rem;
   }
 }
