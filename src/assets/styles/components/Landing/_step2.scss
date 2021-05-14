@@ -1,0 +1,71 @@
+.step2 {
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: $fittly-off-white;
+    padding: 0 2rem;
+  }
+
+  position: relative;
+  overflow: hidden;
+
+  h4 {
+    font-family: "BrandonTextRegular";
+  }
+
+  &__item {
+    &--container {
+      display: flex;
+      overflow: auto;
+      gap: 5rem;
+      padding: 2rem 1rem 4rem;
+    }
+
+    flex-shrink: 0;
+    background-color: #fff;
+    filter: drop-shadow(0px 25px 35px rgba(19, 29, 29, 0.05));
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+    img {
+      width: 200px;
+      height: 273px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    h5,
+    p {
+      padding-left: 1.5rem;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h5 {
+      padding-top: 1rem;
+    }
+
+    p {
+      color: $fittly-dark-tan;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0.5rem 0.5rem 1rem rgba(#000, 0.1),
+        -0.5rem -0.5rem 1rem rgba(#000, 0.1);
+
+      // h5 {
+      // }
+
+      p {
+        color: $fittly-orange;
+        // color: $fittly-dark-teal;
+      }
+    }
+  }
+}

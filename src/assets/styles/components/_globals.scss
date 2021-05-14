@@ -1,9 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,6 +11,7 @@ html {
 body {
   min-height: 100vh;
   font-family: "BrandonTextRegular";
+  color: $fittly-dark-teal;
 }
 
 h1,
@@ -52,6 +51,6 @@ p {
 }
 
 strong,
-bold {
+b {
   font-family: "BrandonTextBold";
 }
