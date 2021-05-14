@@ -30,8 +30,9 @@ function App() {
   }, [urlId]);
 
   return (
-    <div className="App">
+    <div className="app">
       <Container fluid className="m-0">
+        <div className="big-f-circle"></div>
         <Container>
           {loadingData && (
             <>

@@ -8,7 +8,9 @@ import { useState } from "react";
 
 const Step1 = ({ trainerData }) => {
   const getLocation = () => {
-    return `${trainerData.address.city}, ${trainerData.address.country}`;
+    return `${trainerData.address.city || "Some City"}, ${
+      trainerData.address.country || "Some Country"
+    }`;
   };
   console.log(trainerData);
   const [following, setFollowing] = useState(false);
