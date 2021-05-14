@@ -1,3 +1,14 @@
+.big-f-circle {
+  background-image: url(../../img/big_fat_circle.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+
 .loading {
   display: grid;
   place-content: center;
